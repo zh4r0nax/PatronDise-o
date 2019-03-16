@@ -15,7 +15,15 @@ namespace Ejercicio1
         List<Curso> Lista_Curso;
         public Estudiante()
         {
-            Lista_Curso = new List<Curso>();
+            try
+            {
+                Lista_Curso = new List<Curso>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            
         }
 
         /// <summary>
