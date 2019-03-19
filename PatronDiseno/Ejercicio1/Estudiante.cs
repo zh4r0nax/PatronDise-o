@@ -23,7 +23,25 @@ namespace Ejercicio1
             {
                 Console.WriteLine(ex.ToString());
             }
-            
+
+        }
+
+        public Estudiante(Persona persona)
+        {
+            try
+            {
+                Lista_Curso = new List<Curso>();
+                Nombre_Principal = persona.Nombre_Principal;
+                Nombre_Secundario= persona.Nombre_Secundario;
+                Apellido_Paterno= persona.Apellido_Paterno;
+                Apellido_Materno = persona.Apellido_Materno;
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
         }
 
         /// <summary>
@@ -46,7 +64,7 @@ namespace Ejercicio1
         /// Metodo para agregar una matricula de un curso al estudiante
         /// </summary>
         /// <param name="curso">Datos del curso a Agregar</param>
-        public void Matriculacion(Curso curso)
+        public override void Matriculacion(Curso curso)
         {
             try
             {
