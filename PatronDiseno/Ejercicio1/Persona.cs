@@ -9,13 +9,14 @@ namespace Ejercicio1
 {
     public class Persona: IEstudiante,IEmpleado,IPersonal_servicio,IProfesor
     {
-        public String Nombre_Principal { get; set; }
-        public String Nombre_Secundario { get; set; }
-        public String Apellido_Paterno { get; set; }
-        public String Apellido_Materno { get; set; }
-        public int Rut { get; set; }
-        public String CV { get; set; }
-        public String Estado_Civil { get; set; }
+        //Ejercicio1 polimorfismo de jufgadores de españa
+        public String Nombre_Principal ;
+        public String Nombre_Secundario ;
+        public String Apellido_Paterno ;
+        public String Apellido_Materno ;
+        public int Rut ;
+        public String CV ;
+        public String Estado_Civil ;
 
         public virtual void Cambio_Departameno(Departamento departamento)
         {
